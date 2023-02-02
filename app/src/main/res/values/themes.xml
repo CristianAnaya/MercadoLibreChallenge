@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MercadoLibre" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/lightYellow</item>
+        <item name="colorPrimaryVariant">@color/darkYellow</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/lightYellow</item>
+        <item name="colorSecondaryVariant">@color/darkYellow</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Attribute.List">
+        <item name="android:textSize">@dimen/list_content_text</item>
+    </style>
+
+    <style name="Attribute.List.Featured">
+        <item name="android:textColor">@color/featuredContentText</item>
+    </style>
+
+    <style name="Attribute">
+        <item name="android:textColor">@color/contentText</item>
+    </style>
+
+    <style name="Attribute.Detail">
+        <item name="android:textSize">@dimen/detail_content_text</item>
+    </style>
+
+    <style name="Attribute.Detail.Featured">
+        <item name="android:textColor">@color/featuredContentText</item>
+    </style>
+
+    <style name="Label">
+        <item name="android:textColor">@color/labelText</item>
+    </style>
+
+    <style name="Label.Detail">
+        <item name="android:textSize">@dimen/detail_label_text</item>
+    </style>
+</resources>

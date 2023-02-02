@@ -1,0 +1,6 @@
+<resources>
+
+    <!--http errors-->
+    <string name="error_get_currencies">"Couldn't load data"</string>
+
+</resources>

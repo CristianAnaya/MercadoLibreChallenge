@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp" >
+
+                <ImageView
+                    android:id="@+id/image_clock"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/icon_clock"
+                    android:rotation="90"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/grey" />
+
+                <TextView
+                    android:id="@+id/text_view_query"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/grey"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_clock"
+                    app:layout_constraintStart_toEndOf="@+id/image_clock"
+                    app:layout_constraintTop_toTopOf="@+id/image_clock"
+                    tools:text="Samsung Galaxy S10" />
+
+                <ImageView
+                    android:id="@+id/image_arrow"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/icon_arrow"
+                    android:rotation="180"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/grey" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

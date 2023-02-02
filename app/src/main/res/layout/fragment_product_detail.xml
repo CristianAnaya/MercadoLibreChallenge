@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            tools:context=".presentation.features.productDetail.ProductDetailFragment">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+                <TextView
+                    android:id="@+id/condition_and_sold_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Nuevo  |  11 vendidos" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintStart_toStartOf="@+id/condition_and_sold_amount"
+                    app:layout_constraintTop_toBottomOf="@+id/condition_and_sold_amount"
+                    tools:text="Samsung S10" />
+
+                <TextView
+                    android:id="@+id/verified_seller"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:textSize="11sp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="@+id/title"
+                    app:layout_constraintTop_toBottomOf="@+id/title"
+                    tools:text="por Panini"
+                    tools:visibility="visible" />
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/image_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="25dp"
+                    app:layout_constraintStart_toStartOf="@+id/verified_seller"
+                    app:layout_constraintTop_toBottomOf="@+id/verified_seller" />
+
+                <TextView
+                    android:id="@+id/image_amount_and_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/image_slider_indicator_background"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:layout_constraintStart_toStartOf="@+id/image_slider"
+                    app:layout_constraintTop_toTopOf="@+id/image_slider"
+                    tools:text="1/4" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    tools:text="$ 2.790"
+                    app:layout_constraintStart_toStartOf="@+id/image_slider"
+                    app:layout_constraintTop_toBottomOf="@+id/image_slider" />
+
+                <TextView
+                    android:id="@+id/stock_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    tools:text="@string/available_stock"
+                    app:layout_constraintStart_toStartOf="@+id/price"
+                    app:layout_constraintTop_toBottomOf="@+id/price" />
+
+                <TextView
+                    android:id="@+id/stock_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    tools:text="19 disponibles"
+                    app:layout_constraintStart_toStartOf="@+id/stock_title"
+                    app:layout_constraintTop_toBottomOf="@+id/stock_title" />
+
+                <TextView
+                    android:id="@+id/product_detail_availability_shipping"
+                    style="@style/Attribute.Detail.Featured"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/stock_count"
+                    tools:text="Envío gratis" />
+
+
+                <TextView
+                    android:id="@+id/title_attributes"
+                    style="@style/Attribute.Detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/product_detail_availability_shipping"
+                    tools:text="Caracteristicas del producto" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/product_detail_attributes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_attributes"
+                    app:spanCount="2"
+                    tools:listitem="@layout/item_product_attribute" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>

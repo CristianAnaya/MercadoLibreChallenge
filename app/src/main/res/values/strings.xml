@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="hint_search_product">Buscar producto</string>
+
+    <string name="app_name">Mercado Libre Challenge</string>
+    <string name="search_hint">Buscar en Mercado Libre</string>
+    <string name="price">%1$s %2$d</string>
+    <string name="product_installments" formatted="false">%dx $ %s</string>
+    <string name="seller">Vendido por %1$s</string>
+    <string name="available_stock">Stock disponible</string>
+    <string name="title_attributes">Caracteristicas del producto</string>
+    <string name="detail_seller">por %1$s</string>
+    <string name="image_amount_and_index">%1$d/%2$d</string>
+
+    <plurals name="stock_count">
+        <item quantity="one">%1$d disponible</item>
+        <item quantity="other">%1$d disponibles</item>
+    </plurals>
+    <plurals name="condition_and_sold_amount">
+        <item quantity="one">%1$s  |  %2$d vendido</item>
+        <item quantity="other">%1$s  |  %2$d vendidos</item>
+    </plurals>
+</resources>

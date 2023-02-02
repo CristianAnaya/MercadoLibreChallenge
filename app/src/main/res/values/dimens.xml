@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+
+    <dimen name="list_header_text">16sp</dimen>
+    <dimen name="list_price_text">22sp</dimen>
+    <dimen name="list_content_text">14sp</dimen>
+    <dimen name="detail_header_text">22sp</dimen>
+    <dimen name="detail_price_text">28sp</dimen>
+    <dimen name="detail_content_text">16sp</dimen>
+    <dimen name="detail_label_text">14sp</dimen>
+    <dimen name="error_text">28sp</dimen>
+
+    <!-- generic dimens -->
+    <dimen name="padding_margin_micro">2dp</dimen>
+    <dimen name="padding_margin_extra_small">4dp</dimen>
+    <dimen name="padding_margin_small">8dp</dimen>
+    <dimen name="padding_margin_normal_smaller">12dp</dimen>
+    <dimen name="padding_margin_normal">16dp</dimen>
+    <dimen name="padding_margin_large">24dp</dimen>
+    <dimen name="padding_margin_extra_large">36dp</dimen>
+
+    <!-- image sizes -->
+    <dimen name="image_size_small">64dp</dimen>
+    <dimen name="image_size_medium">96dp</dimen>
+    <dimen name="image_size_large">128dp</dimen>
+</resources>
