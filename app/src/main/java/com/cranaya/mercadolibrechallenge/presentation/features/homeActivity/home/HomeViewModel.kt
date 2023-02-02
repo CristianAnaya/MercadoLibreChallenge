@@ -1,11 +1,10 @@
 package com.cranaya.mercadolibrechallenge.presentation.features.homeActivity.home
 
-import android.util.Log
 import androidx.lifecycle.*
 import com.cranaya.domain.model.Product
 import com.cranaya.domain.model.Resource
 import com.cranaya.domain.useCase.productList.GetProductListUseCase
-import com.cranaya.mercadolibrechallenge.utils.SingleLiveEvent
+import com.cranaya.mercadolibrechallenge.core.helpers.SingleLiveEvent
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

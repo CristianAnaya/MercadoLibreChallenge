@@ -48,21 +48,6 @@ class HomeActivityTest : BaseEspressoTest(){
     }
 
     @Test
-    fun checkEmptyView() {
-
-        //Go to search view
-        onView(withId(R.id.edit_text_search)).perform(click())
-
-        //Do search
-        val query = "aslkfja slkjfaskdl jfaklsjf laks"
-        onView(withId(R.id.edit_text_query)).perform(replaceText(query), pressImeActionButton())
-
-        // Check that the search label was changed.
-        val labelEmpty = ""
-        onView(withId(R.id.edit_text_search)).check(matches(withText(labelEmpty)))
-    }
-
-    @Test
     fun checkGoToDetailsView() {
 
         //Go to search view

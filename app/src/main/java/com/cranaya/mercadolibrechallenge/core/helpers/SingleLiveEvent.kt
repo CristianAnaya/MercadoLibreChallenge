@@ -1,4 +1,4 @@
-package com.cranaya.mercadolibrechallenge.utils
+package com.cranaya.mercadolibrechallenge.core.helpers
 
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.MutableLiveData

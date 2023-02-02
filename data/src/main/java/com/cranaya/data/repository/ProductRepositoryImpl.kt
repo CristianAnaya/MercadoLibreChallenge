@@ -64,6 +64,7 @@ class ProductRepositoryImpl @Inject constructor(
      */
     override suspend fun getProductDetailById(productId: String): Flow<Resource<Product>> {
         return flow {
+            emit(Resource.Loading(true))
             try {
                 val apiResponse = restApi.getProductDetail(productId)
                 if (apiResponse?.isSuccessful == true) {

@@ -36,9 +36,15 @@ class ProductDetailViewModel @Inject constructor(
                     .execute(productId)
                     .collect { result ->
                         when(result) {
-                            is Resource.Success -> _productModel.postValue(result.data!!)
+                            is Resource.Success -> {
+                                _productModel.postValue(result.data!!)
+                                _isLoading.postValue(false)
+                            }
 
-                            is Resource.Error -> _error.postValue(result.message!!)
+                            is Resource.Error -> {
+                                _error.postValue(result.message!!)
+                                _isLoading.postValue(false)
+                            }
 
                             is Resource.Loading -> _isLoading.postValue(result.isLoading)
                         }
