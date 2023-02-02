@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import androidx.paging.PagedListAdapter
 import com.bumptech.glide.Glide
 import com.cranaya.domain.model.Product.Picture
 import com.cranaya.mercadolibrechallenge.R
