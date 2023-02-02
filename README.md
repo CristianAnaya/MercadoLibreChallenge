@@ -10,7 +10,7 @@ La aplicación permite buscar productos dado el nombre de un producto usando la 
 * Guardado de busquedas recientes
 
 ## Arquitectura
-La aplicación se desarrolló con Clean Architecture y siguiendo el patron MVVM (*model-view-view model*) y se distribuye en tres módulos de la siguiente manera:
+La aplicación se desarrolló con clean architecture, tambien siguiendo el patron MVVM (*model-view-view model*) y se distribuye en tres módulos de la siguiente manera:
 
 ### domain
 Definición de alto nivel de los repositorios, los casos de uso de la aplicacion y de los objetos modelo a usar. Estas definiciones son independientes de la fuente de datos.
